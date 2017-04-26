@@ -47,7 +47,7 @@ class Stock{
         
           $newsTitle = $feedItem->title; 
 
-          $allNews .=  " ><a href='$feedItem->link' title='$feedItem->title'> " . $feedItem->pubDate . " " . $newsTitle . "</a></li>";
+          $allNews .=  " ><a target='_blank' href='$feedItem->link' title='$feedItem->title'> " . $feedItem->pubDate . " " . $newsTitle . "</a></li>";
 
           if ($i == 3)
           {

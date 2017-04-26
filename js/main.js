@@ -9,7 +9,8 @@ $("#main_button").click(function(){
 
 	if (test_results == true)
 	{
-	  	$("#div_results").html('<br><br>Please wait while data is gathered ');
+		var spinner_div = $("<div class='loader' />")
+	  	$("#div_results").html(spinner_div);
 
      	$.ajax({
           url: "retrieve_stock_info.php",
